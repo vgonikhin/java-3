@@ -1,9 +1,14 @@
 package geekbrains.java3.lesson7;
 
-public class TestClass {
+public class TestClass<T> {
+
+    static Thread t = new Thread();
+
 
     @BeforeSuite
     static void bs(){
+        t.start();
+        t.stop();
         System.out.println("BeforeSuite");
     }
 
@@ -38,6 +43,11 @@ public class TestClass {
 
     @Test(order = 3)
     static void f(int n){
+        System.out.println(n);
+    }
+
+    @Test(order = 7)
+    static void f7(int n){
         System.out.println(n);
     }
 

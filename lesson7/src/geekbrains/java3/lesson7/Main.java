@@ -1,5 +1,6 @@
 package geekbrains.java3.lesson7;
 
+import java.io.File;
 import java.lang.reflect.Method;
 
 public class Main {
@@ -43,5 +44,8 @@ public class Main {
             }
         }
         return (beforeCounter<=1)&&(afterCounter<=1);
+
+//        File f = new File("1.txt");
+//        f.mkdir();
     }
 }
