@@ -7,10 +7,10 @@ public class TestClass {
         System.out.println("BeforeSuite");
     }
 
-//    @BeforeSuite
-//    static void bs2(){
-//        System.out.println("BeforeSuite");
-//    }
+    @BeforeSuite
+    static void bs2(){
+        System.out.println("BeforeSuite");
+    }
 
     @Test(order = 9)
     static void a(int n){
